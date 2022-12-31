@@ -10,4 +10,8 @@ sqlc:
 	@echo "Generating SQLC..."
 	sqlc generate
 
+test:
+	@echo "Running tests..."
+	go test -v -cover ./...
+
 .PHONY: migrateup migratedown
